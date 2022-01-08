@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "farfromhome",
+  "version": "${version}",
+  "name": "Farfromhome",
+  "description": "Mobs get stronger the farther away from 0,0 you get",
+  "authors": [
+    "Keypup"
+  ],
+  "contact": {
+    "repo": "https://github.com/Christopher-Zhang/Far-From-Home.git"
+  },
+  "license": "MIT",
+  "icon": "assets/farfromhome/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.keypup.minecraft.farfromhome.farfromhome.client.FarfromhomeClient"
+    ],
+    "main": [
+      "com.keypup.minecraft.farfromhome.farfromhome.Farfromhome"
+    ]
+  },
+  "mixins": [
+    "farfromhome.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
